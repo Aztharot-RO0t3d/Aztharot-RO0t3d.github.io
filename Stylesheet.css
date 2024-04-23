@@ -1,0 +1,132 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #3a3a3a;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+h2 {
+    color: #5c0000;
+}
+
+h3 {
+    color: #5c0000;
+}
+
+h4 {
+    color: #3E2723;
+}
+
+h5 {
+    color: #FF1493;
+}
+
+h6 {
+    color: #FF1493;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav a:hover {
+    border-bottom-color: #d65c8c;
+    box-shadow: 0 0 10px rgba(214, 92, 140, 0.8);
+}
+
+section.active {
+background-color: #3b3b3b; /* Cambiar el color de fondo */
+border-color: #4a4a4a; /* Cambiar el color del borde */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Cambiar la sombra */
+}
+
+
+footer {
+background-color: rgba(58, 58, 58, 0); /* Establece una transparencia inicial */
+padding: 5px;
+text-align: center;
+position: fixed;
+width: 100%;
+bottom: 0;
+transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Añade una transición suave */
+margin-top: 20px;
+opacity: 0; /* Inicialmente oculta el footer */
+}
+
+section.active {
+display: block;
+}
+
+.neon-text {
+    text-shadow: 0 0 5px #81fcc9, 0 0 10px #53f9ae, 0 0 15px #29e791;
+}
+
+.neon-texth2 {
+    text-shadow: 0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 30px #FF1493;
+}
+
+.neon-text-mtr {
+    text-shadow: 0 0 10px #D2BBA0, 0 0 20px #A1887F, 0 0 30px #A1887F;
+}
+.neon-text-auth-ref {
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00ccff, 0 0 30px #00e1ff;
+}
+
+.neon-text-derechos-de-autor {
+    text-shadow: 0 0 10px #a000558f, 0 0 20px #a30057, 0 0 30px #b60061;
+}
+
+.ornamento {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background-color: #3a3a3a;
+}
+
+.ornamento.izquierdo {
+    left: 0;
+}
+
+.ornamento.derecho {
+    right: 0;
+}
+
+.content {
+max-width: 800px;
+margin: 25px auto 10px; /* Ajusta el margen inferior a 40px (puedes ajustar según tus preferencias) */
+margin-bottom: 40px;
+padding: 20px;
+background-color: #2b2b2b;
+border: 1px solid #3a3a3a;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
