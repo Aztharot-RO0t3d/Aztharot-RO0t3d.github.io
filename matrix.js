@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const matrix = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz123456789@#$%^&*()*&^%<>{}[]°¨`';
+    const matrix = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗ-=ХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ123456789@#$%^&*()*&^%<>{}[]°¨`';
     const fontSize = 14;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
