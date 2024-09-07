@@ -13,7 +13,7 @@ header, section, footer {
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a00;
     padding: 5px 5px;
 }
 
@@ -67,10 +67,10 @@ section p {
 }
 
 section#intro p,
-section#skills li,
-section#projects .project,
+section#objetive li,
+section#requirements .project,
 section#characteristics p,
-section#ideals p,
+section#idea p,
 section#defects p,
 section#strengths p,
 section#quotes .quote p {
@@ -101,13 +101,17 @@ footer {
     animation: pulse 7.5s infinite;
 }
 
+.nickname {
+    color: crimson;
+}
+
 .bold-text {
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .footer{
-    background-color: #000000;
+    background-color: #00000000;
     padding: 10px 10px;
     text-align: center;
     color: #cccccc;
