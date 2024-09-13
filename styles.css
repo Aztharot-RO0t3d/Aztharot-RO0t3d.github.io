@@ -13,8 +13,27 @@ header, section, footer {
 }
 
 header {
-    background-color: #1a1a1a00;
+    background-color: #1a1a1a55;
     padding: 5px 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #9af5f0;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav a:hover {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
 header h1 {
@@ -22,7 +41,7 @@ header h1 {
     color: #33ff33;
 }
 
-h3{
+h3 {
     color: rgb(72, 255, 0);
 }
 
@@ -31,7 +50,7 @@ body {
     line-height: 1.45;
     margin: 0;
     padding: 0;
-    background-color: #00ff00;
+    background-color: #2a2a2a;
     color: #ffffff;
 }
 
@@ -48,19 +67,37 @@ ul li::before {
     margin-right: 1em;
 }
 
-section#skills ul {
+section#characteristics ul {
     list-style-type: none;
     padding: 0;
 }
 
-section#skills li {
+section#characteristics li {
+    margin-bottom: 10px;
+}
+
+section#objetive ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#objetive li {
+    margin-bottom: 10px;
+}
+
+section#about_us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#about_us li {
     margin-bottom: 10px;
 }
 
 section h2 {
     color: lightgreen;
-    text-shadow: 0 0 2.5px #33ff33, 0 0 5px #33ff33, 0 0 7.5px #33ff33;
-    animation: pulse 7s infinite;
+    text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
+    animation: pulse 10s infinite;
 }
 
 section p {
@@ -72,19 +109,55 @@ section#objetive li,
 section#requirements .project,
 section#characteristics p,
 section#idea p,
-section#defects p,
-section#strengths p,
+section#about_us p,
+section#enroll p,
 section#quotes .quote p {
     color: #ffffff;
 }
-
-
 
 footer {
     background-color: #ffffff00;
     padding: 10px 0;
     text-align: center;
     color: #cccccc;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #0F0;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ff00;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -98,8 +171,8 @@ footer {
 }
 
 .glowing {
-    text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33;
-    animation: pulse 7.5s infinite;
+    text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
+    animation: pulse 10s infinite;
 }
 
 .nickname {
@@ -112,15 +185,42 @@ footer {
 }
 
 .glowing_2 {
-    text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33;
-    animation: neontitle 4s infinite;
+    text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
+    animation: neontitle 6s infinite;
 }
 
-.footer{
-    background-color: #00000000;
-    padding: 10px 10px;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 25%;
     text-align: center;
-    color: #cccccc;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left a{
+    color: #f8ab20;
+}
+
+.footer-glowing {
+    text-shadow: 0 0 .5px #ffffff, 0 0 1px rgba(255, 255, 255, 0.92), 0 0 1.4px rgb(255, 255, 255, 0.92);
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    color: #f8ab20;
 }
 
 blockquote {
@@ -172,37 +272,32 @@ blockquote:after {
     vertical-align: -0.4em;
 }
 
-
 @keyframes pulse {
     0% {
-        text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33;
+        text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
         color: #33ff33;
     }
     50% {
         text-shadow: none;
         color: #22cc22;
     }
-    75% {
-        text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33;
+    100% {
+        text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
         color: #33ff33;
     }
 }
 
 @keyframes neontitle {
     0% {
-        text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33;
-        color: #33ff33;
-    }
-    25% {
-        text-shadow: none;
+        text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
         color: #33ff33;
     }
     50% {
         text-shadow: none;
         color: #33ff33;
     }
-    75% {
-        text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33, 0 0 15px #33ff33;
+    100% {
+        text-shadow: 0 0 2px #33ff33, 0 0 4px rgba(51, 255, 51, 0.5), 0 0 6px rgba(51, 255, 51, 0.3);
         color: #33ff33;
     }
 }
