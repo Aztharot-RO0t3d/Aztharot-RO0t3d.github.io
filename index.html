@@ -6,6 +6,7 @@
     <title>CCH Oriente</title>
     <link rel="icon" href="1c5ec0dc-474f-4150-92d0-be4a101d0c7d.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="matrix.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -15,17 +16,25 @@
         <div class="container">
             <h1 class="glowing_2">¡Únete al Curso de Ciberseguridad!</h1>
         </div>
+        
+        <!-- Navbar -->
         <nav class="navbar">
-            <ul class="nav-links">
-                <a href="#intro">Introducción</a>
-                <a href="#objetive">Objetivos</a>
-                <a href="#requirements">Requisitos</a>
-                <a href="#characteristics">Modalidad</a>
-                <a href="#idea">Estructura</a>
-                <a href="#about_us">Sobre Nosotros</a>
-                <a href="#enroll">Inscríbete</a>
-                <a href="#quotes">Citas</a>
-            </ul>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+                <ul class="nav-links">
+                    <a href="#intro">Introducción</a>
+                    <a href="#objetive">Objetivos</a>
+                    <a href="#requirements">Requisitos</a>
+                    <a href="#characteristics">Modalidad</a>
+                    <a href="#idea">Estructura</a>
+                    <a href="#about_us">Sobre Nosotros</a>
+                    <a href="#enroll">Inscríbete</a>
+                    <a href="#quotes">Citas</a>
+                </ul>
         </nav>
     </header>
     <section id="intro">
@@ -88,6 +97,10 @@
             <p>Si estás list@ para dar el siguiente paso en el emocionante mundo de la ciberseguridad, pide informes en Difusión Cultural que esta a un costado de la cafetería cerca de pastos.</p>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <!-- Citas -->
     <section id="quotes">
         <div class="container">
             <h2>Citas</h2>
@@ -141,19 +154,39 @@
             </blockquote>
         </div>
     </section>
-    
+    <section>
+        <div class="container">
+            <a href="mailto:aztharot.ru@icloud.com" target="_blank">
+                <i class="fa fa-apple" id="apple"></i>
+            </a>
+            <a href="https://x.com/AztharotRu" target="_blank">
+                <i class="fa fa-twitter" id="twitter"></i>
+            </a>
+            <a href="https://github.com/Aztharot-RO0t3d" target="_blank">
+                <i class="fa fa-github-square github" id="github"></i>
+            </a>
+            <a href="https://facebook.com/AztharotRu" target="_blank">
+                <i class="fa fa-facebook-square" id="facebook"></i>
+            </a>
+        </div>
+    </section>
+    </section>
+    <!-- Footer Izquierdo -->
     <footer class="footer">
         <div class="container footer-left">
             <p class="footer-glowing">Compañeros que contribuyeron al diseño de esta página</p>
                 <a>Josué H</a>
         </div>
+        <!-- Footer Central -->
         <div class="container footer-center">
             <p>© 2024 Aztharot. Todos los derechos reservados.</p>
         </div>
+        <!-- Footer Derecho -->
         <div class="container footer-right">
-            <p class="footer-glowing">Profesores que han apollado el proyecto</p>
+            <p class="footer-glowing">Profesores que han apoyado el proyecto</p>
                 <a>Jimenez Sanchez Hector</a><br>
-                <a>Hernández Gonzales Juan José</a>
+                <a>Hernández Gonzales Juan José</a><br>
+                <a>Ramos Dominguez Karina</a>
         </div>
     </footer>
 </body>
