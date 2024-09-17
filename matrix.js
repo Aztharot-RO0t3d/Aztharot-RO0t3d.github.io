@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const matrix = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz123456789@#$%^&*()*&^%<>{}[]°¨`';
+    const matrix = 'АЯШЕРТЫУИОПЮЬЪСДФГЧЙКЛЩЗХЦВБНМ@#$%^&*()*&^%<>{}[]°¨`';
     const fontSize = 12;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
@@ -36,4 +36,52 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
     });
+
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        } else {
+            navbar.style.backgroundColor = 'transparent';
+        }
+    });
+
+    // Funcionalidad para el menú hamburguesa en móviles
+    const menuToogle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToogle.addEventListener('change', () => {
+        if (menuToggle.checked) {
+            navLinks.style.display = 'flex' ;
+        } else {
+            navLinks.style.display = 'none' ;
+        }
+    });
+
+    // Footer
+    const footerLeft = document.querySelector('.footer-left');
+    const footerRight = document.querySelector('.footer-right');
+
+    if (footerLeft && footerRight) {
+        footerLeft.style.float = 'left';
+        footerRight.style.float = 'right';
+        footerLeft.style.padding = '10px';
+        footerRight.style.padding = '10px';
+    }
+
+    const footer = document.querySelector('.footer');
+    observer.observe(footer);
 });
