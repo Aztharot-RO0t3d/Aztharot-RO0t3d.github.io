@@ -43,18 +43,18 @@ header h1 {
 }
 
 nav {
-    display: block;
-    justify-content: center;
-    margin-top: 10px;
+    display: flex;
+    align-content: space-between;
+    margin-left: 60px;
     background-color: rgba(0, 0, 0, 0.104);
     padding: 10px;
     gap: 40px;
 }
 
 nav ul {
-    display: block;
+    display: flex;
     align-content: space-between;
-    margin: 40px;
+    margin-left: 70px;
     background-color: rgba(0, 0, 0, 0.103);
     padding: 10px;
     gap: 20px;
@@ -63,8 +63,7 @@ nav ul {
 nav a {
     color: #00ff00;
     text-decoration: none;
-    padding: 20px 40px;
-    margin: 10px 30px 40px;
+    margin-left: 60px;
     transition: border-bottom-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
