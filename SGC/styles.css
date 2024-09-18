@@ -1,0 +1,110 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #d4af37; /* Dorado */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    background: url('matrix-background.png') repeat center center fixed;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 20px 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.404);
+}
+
+section h2 {
+    color: #d4af37;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d4af37;
+    padding-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    color: #e5e5e5;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: rgba(212, 175, 55, 0.096);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #d4af37;
+    color: #d4af37;
+}
+
+/* Animaciones */
+@keyframes cascade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.matrix span {
+    position: absolute;
+    color: #d4af37;
+    animation: cascade 1.5s linear infinite;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
