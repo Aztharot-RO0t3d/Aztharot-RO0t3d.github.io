@@ -1,0 +1,108 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #1c1c1c;
+    color: #ffff;
+    margin: 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #3a3a3a3a;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #9af5f0;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav a:hover {
+    border-bottom-color: #5FE9E5;
+    box-shadow: 0 0 10px rgba(214, 92, 140, 0.8);
+}
+
+section.active {
+background-color: #1A0330; /* Cambiar el color de fondo */
+border-color: #1A0330; /* Cambiar el color del borde */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Cambiar la sombra */
+}
+
+
+footer {
+background-color: rgba(58, 58, 58, 0); /* Establece una transparencia inicial */
+padding: 5px;
+text-align: center;
+position: fixed;
+width: 100%;
+bottom: 0;
+transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Añade una transición suave */
+margin-top: 20px;
+opacity: 0; /* Inicialmente oculta el footer */
+}
+
+section.active {
+display: block;
+}
+
+.neon-text {
+    text-shadow: 0 0 10px #81fcc9, 0 0 200px #53f9ae, 0 0 300px #29e791;
+}
+
+.neon-texth2 {
+    text-shadow: 0 0 5px #5FE9E5, 0 0 10px #5FE9E5, 0 0 300px #5FE9E5, 0 0 20px #5FE9E5;
+}
+
+.neon-text-mtr {
+    text-shadow: 0 0 10px #5FE9E5, 0 0 20px #5FE9E5, 0 0 30px #5FE9E5;
+}
+.neon-text-auth-ref {
+    text-shadow: 0 0 10px #5FE9E5, 0 0 20px #5FE9E5, 0 0 30px #5FE9E5;
+}
+
+.neon-text-derechos-de-autor {
+    text-shadow: 0 0 15px #5fe9e5, 0 0 10px #5fe9e5, 0 0 15px #5fe9e5;
+}
+
+.ornamento {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background-color: #3a3a3a;
+}
+
+.ornamento.izquierdo {
+    left: 0;
+}
+
+.ornamento.derecho {
+    right: 0;
+}
+
+.content {
+max-width: 800px;
+margin: 25px auto 10px; /* Ajusta el margen inferior a 40px (puedes ajustar según tus preferencias) */
+margin-bottom: 40px;
+padding: 20px;
+background-color: #2b2b2b;
+border: 1px solid #3a3a3a;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border-radius: 1%;
+}
