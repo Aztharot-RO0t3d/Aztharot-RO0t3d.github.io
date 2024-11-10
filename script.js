@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const title = document.getElementById("title");
-    const text = "Bienvenido a Aztharot - Servicios de Ciberseguridad";
+    const text = "Bienvenido a Aztharot - Servicios en Ciberseguridad y Programación";
     title.textContent = "";
 
     let index = 0;
