@@ -1,0 +1,16 @@
+/* style.css */
+
+/* Cursor estilo pixel art */
+body, a, input, textarea, button {
+    cursor: url('https://example.com/pixel-cursor.png'), auto;
+}
+
+/* Efecto de parpadeo */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.text-blink {
+    animation: blink 1s infinite;
+}
