@@ -3,65 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aztharot - Servicios de Ciberseguridad y Programación</title>
+    <title>Aztharot - Servicios y Clases en Ciberseguridad</title>
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Iconos de Font Awesome para redes sociales -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-[#33ff33] font-mono">
 
-    <!-- Contenedor principal -->
-    <div class="min-h-screen flex flex-col items-center justify-center text-center px-4">
-        <!-- Título con efecto de máquina de escribir -->
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-6 bg-gray-900 text-indigo-500">
+        <div class="text-2xl font-bold">Aztharot</div>
+        <ul class="flex space-x-6">
+            <li><a href="#services" class="hover:text-[#33ff33]">Servicios</a></li>
+            <li><a href="#projects" class="hover:text-[#33ff33]">Proyectos</a></li>
+            <li><a href="#contact" class="hover:text-[#33ff33]">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título con efecto de máquina de escribir -->
+    <header class="flex flex-col items-center justify-center min-h-screen text-center">
         <h1 id="title" class="text-5xl md:text-6xl font-extrabold text-indigo-500"></h1>
         <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-lg mx-auto">
-            Soy Aztharot, especialista en ciberseguridad y programación fullstack. Ofrezco servicios de formación y cursos en análisis de redes, forense digital y desarrollo seguro.
+            Explora mis servicios y cursos sobre ciberseguridad, análisis de sistemas y programación.
         </p>
-
-        <!-- Botón de contacto -->
         <a href="#contact" class="mt-8 inline-block px-8 py-4 border-2 border-[#33ff33] text-[#33ff33] hover:bg-[#33ff33] hover:text-black transition duration-300 transform hover:scale-105 rounded-md text-lg md:text-xl">
             Contáctame
         </a>
-    </div>
+    </header>
 
     <!-- Sección de Servicios -->
     <section id="services" class="bg-[#0d0d0d] text-white py-20">
         <div class="container mx-auto text-center px-8">
             <h2 class="text-4xl md:text-5xl font-bold text-indigo-500 mb-12">Servicios</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Servicio 1 -->
                 <div class="p-6 border border-indigo-500 rounded-lg transition duration-300 transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2">Análisis de Seguridad</h3>
-                    <p class="text-gray-300">Identificación de vulnerabilidades en redes y aplicaciones.</p>
+                    <h3 class="text-2xl font-bold mb-2">Clases de Ciberseguridad</h3>
+                    <p class="text-gray-300">Conceptos básicos y avanzados en hacking ético y análisis de vulnerabilidades.</p>
                 </div>
-                <!-- Servicio 2 -->
                 <div class="p-6 border border-indigo-500 rounded-lg transition duration-300 transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2">Clases de Programación</h3>
-                    <p class="text-gray-300">Enseñanza de programación en Python, Linux y frameworks de seguridad.</p>
+                    <h3 class="text-2xl font-bold mb-2">Programación en Python</h3>
+                    <p class="text-gray-300">Programación para automatización y análisis de datos.</p>
                 </div>
-                <!-- Servicio 3 -->
                 <div class="p-6 border border-indigo-500 rounded-lg transition duration-300 transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2">Pentesting y Forense Digital</h3>
-                    <p class="text-gray-300">Evaluación de la seguridad de sistemas mediante pruebas éticas.</p>
+                    <h3 class="text-2xl font-bold mb-2">Forense Digital</h3>
+                    <p class="text-gray-300">Identificación de huellas y rastreo de ataques en sistemas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Contacto -->
-    <section id="contact" class="bg-black py-20 text-center text-gray-300">
-        <h2 class="text-4xl md:text-5xl font-bold text-indigo-500 mb-8">Contáctame</h2>
-        <p class="mb-6">Envíame un mensaje para conocer más sobre mis servicios y cursos.</p>
-        <form action="#" method="POST" class="max-w-xl mx-auto">
-            <input type="text" placeholder="Nombre" class="w-full p-3 mb-4 bg-gray-800 text-gray-300 border border-[#33ff33] rounded-md">
-            <input type="email" placeholder="Correo electrónico" class="w-full p-3 mb-4 bg-gray-800 text-gray-300 border border-[#33ff33] rounded-md">
-            <textarea placeholder="Mensaje" class="w-full p-3 mb-4 bg-gray-800 text-gray-300 border border-[#33ff33] rounded-md"></textarea>
-            <button type="submit" class="px-6 py-3 bg-[#33ff33] text-black rounded-md font-bold text-lg transform hover:scale-105 transition duration-300">
-                Enviar
-            </button>
-        </form>
+    <!-- Carrusel de Proyectos -->
+    <section id="projects" class="bg-black py-20 text-center text-gray-300">
+        <h2 class="text-4xl md:text-5xl font-bold text-indigo-500 mb-8">Proyectos</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <h3 class="text-2xl font-bold">Proyecto 1</h3>
+                <p class="text-gray-400">Descripción del proyecto sobre análisis de vulnerabilidades.</p>
+            </div>
+            <div class="carousel-item">
+                <h3 class="text-2xl font-bold">Proyecto 2</h3>
+                <p class="text-gray-400">Implementación de un sistema de detección de intrusos.</p>
+            </div>
+            <div class="carousel-item">
+                <h3 class="text-2xl font-bold">Proyecto 3</h3>
+                <p class="text-gray-400">Automatización en análisis forense digital.</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+            <div>
+                <h3 class="text-lg font-bold text-indigo-500">Políticas de Privacidad</h3>
+                <p>Consulta nuestras políticas de privacidad y términos de servicio.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-indigo-500">Marca</h3>
+                <p>© 2023 Aztharot. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex space-x-4 justify-center">
+                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-discord"></i></a>
+                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
