@@ -1,9 +1,31 @@
 /* style.css */
-
 /* Cursor estilo pixel art */
 body, a, input, textarea, button {
     cursor: url('https://example.com/pixel-cursor.png'), auto;
 }
+
+/* Estilos del carrusel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 2px solid #33ff33;
+    transition: transform 0.3s;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
 
 /* Efecto de parpadeo */
 @keyframes blink {
